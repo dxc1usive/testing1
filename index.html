@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HISTORYwithMRH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+     /* Inline styles only for quick demo of hero animation */
+    .hero {
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 80px 20px;
+      animation: heroFade 2s ease-in-out;
+    }
+     @keyframes heroFade {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HISTORYwithMRH</h1>
+     <a id="loginLink" href="/login">Login</a>
+    <div id="loginMessage" style="font-weight:bold;color:red"></div>
+  </header>
+  <div class="hero">
+    <h1>Hizzy History</h1>
+    <p>Discover the past in a modern way</p>
+    <p></p>
+  </div>
+  <nav>
+    <a href="units.html">Units</a>
+    <a href="resources.html">Resources</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="assignments.html">Assignments</a>
+  </nav>
+  <div id="dailyQuote" class="quote"></div>
+  <footer>
+    Contact: chizynski@wyomingarea.org | GitHub | &copy; 2025 HISTORYwithMRH
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
